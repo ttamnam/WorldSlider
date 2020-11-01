@@ -10,7 +10,7 @@ app.get("/results", function(req, res){
 app.get("/", function(req, res){
 	var query = req.query.search;
 	
-	request('https://www.reddit.com/r/EarthPorn/hot/.api', function (error, response, body){
+	request('https://www.reddit.com/r/NatureIsFuckingLit.api', function (error, response, body){
 		if(!error && response.statusCode == 200) {
 			var data = JSON.parse(body)
 			var arr = []
